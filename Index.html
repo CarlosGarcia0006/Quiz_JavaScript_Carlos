@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndexQuiz</title>
+    <style>
+        div{
+            margin: 20%;
+            margin-top: 10%;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        h1{
+            margin-bottom: 40px;
+        }
+
+        input{
+            margin: 5px;
+            border: solid 1px black;
+        }
+        table{
+            margin: auto;
+            text-align: center;
+        }
+        
+    
+        td{
+            border: 1px solid black;
+        }
+
+        th{
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1><b>Consulta de datos de temperatura en Colombia</b></h1>
+
+        <form>
+            <label id="nombres"><b>Departamento:</b></label><br>
+            <input type="text" id="Nombres" name="Nombres">
+            <input type="submit" id="Buscar" name="Buscar"><br>
+        </form>
+
+        <h4>Resultados:</h4>
+        
+            <table>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Valor</th>
+                    <th>Estacion</th>
+                    <th>Departamento</th>
+                    <th>Municipio</th>
+                </tr>
+
+                <tbody id="resultadosTabla">
+                    </tbody>
+            </table>
+        
+    </div>
+
+    <script src="JavascriptIndex.js"></script>
+</body>
+</html>
